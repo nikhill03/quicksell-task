@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import TicketCard from './TicketCard';
-import GroupingSelector from './GroupingSelector';
 import Navbar from './Navbar';
-import SortingSelector from './SortingSelector';
 import '../css/KanbanBoard.css';
 import defaultProfile from '../images/defaultImgProfile.webp'
 
@@ -10,11 +8,11 @@ const KanbanBoard = () => {
   const [tickets, setTickets] = useState([]);
   const [groupedTickets, setGroupedTickets] = useState({});
   const [groupingType, setGroupingType] = useState(() => {
-    const storedGroupingType = localStorage.getItem('groupingType');
+    const storedGroupingType = localStorage.getItem('groupingType') || 'status' ;
     return storedGroupingType;
   });
   const [sortingType, setSortingType] = useState(() => {
-    const storedSortingType = localStorage.getItem('sortingType');
+    const storedSortingType = localStorage.getItem('sortingType') || 'priority';
     return storedSortingType;
   });
   const [isDataLoaded, setIsDataLoaded] = useState(false);
