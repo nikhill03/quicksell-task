@@ -35,12 +35,12 @@ const Navbar = ({ groupingType, sortingType, handleGroupingChange, handleSorting
                         <select
                             className="grouping-selector"
                             id='groupBy'
-                            defaultValue={groupingType}
                             value={groupingType}
+                            placeholder="Select Group"
                             onChange={(e) => handleGroupingChange(e.target.value)}
                         >
                             {groupOptions.map(option => (
-                                <option key={option.value} value={option.value}>
+                                <option key={option.value}   value={option.value}>
                                     {option.label}
                                 </option>
                             ))}
@@ -52,7 +52,6 @@ const Navbar = ({ groupingType, sortingType, handleGroupingChange, handleSorting
                         <select
                             className="sorting-selector"
                             id='sortBy'
-                            defaultValue={sortingType}
                             value={sortingType}
                             onChange={(e) => handleSortingChange(e.target.value)}
                         >
