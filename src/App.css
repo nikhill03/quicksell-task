@@ -1,16 +1,84 @@
 .App {
+  /* text-align: center; */
+}
+
+.nav-ul{
+  margin: 0px;
+  padding: 5px;
+  background-color: #444141;
+}
+
+
+.nav-ul li{
+ display: inline;
+ padding-left: 12px;
+ font-size: 25px;
+ 
+ 
+}
+.nav-ul li a{
+  text-decoration: none;
+  color:aliceblue;
+  padding: 5px;
+}
+
+.foot{
+  position:absolute;
+  bottom: 0;
+  background-color: #b09797;
+  width: 100%;
   text-align: center;
+  border-top-width: 0px;
+  border-top-style: solid;
+  padding-bottom: 10px;
+  padding-top: 10px;
+
+}
+.SignUp{
+  display: block;
+  margin: 25px;
+    margin-left: 25px;
+  
+  /* width: 300px; */
+  padding: 7px;
+  border: 1px solid skyblue;
+  margin-left: 800px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.button{
+  padding: 4px;
+  margin: 15px;
+  margin-left: 870px;
+  margin-top: 13px;
+  /* width: 150px; */
+  background-color: #61dafb;
+  border: 1px solid;
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Product-list{
+    text-align: center;
+    margin-top: 80px;
+}
+.Product-list ul li{
+  display: inline-block;
+  border: 2px solid #b09797;
+  padding: 8px ;
+  margin: 0px;
+  width: 250px;
+}
+.Product-list ul {
+ 
+  margin: 0px;
+  
+}
+.Search{
+  width: 700px;
+  margin: 22px;
+  height: 37px;
+  border: 2px solid #b09797;
+  margin-top: 0px;
+
 }
 
 .App-header {

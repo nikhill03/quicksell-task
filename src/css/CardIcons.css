@@ -1,0 +1,12 @@
+.icons-container {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+  }
+  
+  .icon-placeholder {
+    width: 20px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 50%;
+  }

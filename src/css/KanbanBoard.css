@@ -1,0 +1,93 @@
+.kanban-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .control-panel {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .kanban-board {
+    min-height: 100vh;
+    background-color: #f1f1f1;
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+  }
+  
+  .kanban-column {
+    border-radius: 8px;
+    padding: 10px;
+    width: 25%;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .column-header {
+    font-size: 1.5em;
+    text-align: center;
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  .kanban-header-content {
+    display: flex;
+    justify-content: space-between; /* Space between title+icon and extra icons */
+    align-items: center; /* Align items vertically centered */
+  }
+  
+  .group-title-icon {
+    display: flex;
+    align-items: center; /* Align the icon and group name inline */
+  }
+  
+  .group-title-icon h3 {
+    margin-left: 8px; /* Space between group icon and group name */
+  }
+  
+  .additional-icons {
+    display: flex;
+    gap: 8px; /* Space between the two right-aligned icons */
+  }
+  
+
+  .kanban-column-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  
+  h3 {
+    margin-right: auto; /* Pushes the group name to the left */
+    margin-left: 8px; /* Add some space between the icon and the text */
+  }
+  
+  .extra-icons {
+    margin-left: auto; /* Pushes icons to the far right */
+    display: flex;
+    gap: 8px; /* Adds space between icons */
+  }
+  
+  .card-icon-user{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    
+  }
+
+  .header-content-group{
+    font-weight: 500;
+  }
